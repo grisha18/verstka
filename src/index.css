@@ -1,3 +1,12 @@
+
+html,
+body,
+*{
+  margin: 0;
+  padding: 0
+}
+
+
 .menu-list{
  
 list-style: none    ;
@@ -25,11 +34,16 @@ list-style: none    ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 200px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
 }
+
 .container{
-  padding-left: 50px;
-  padding-right: 50px; 
+  width: 100vw;
+  
+ 
 }
 .search{
   display: inline-block;
@@ -52,27 +66,87 @@ list-style: none    ;
   color: gainsboro;
   text-align: center;
   font-size: 20px;
+  margin-top: 100px;
 
 }
 .test{
-   margin-left: 465px;
+   
    font-size: 18px;
    color: gainsboro;
 }
-.buttons{
+.buttons {
   display: flex;
-  margin-left: 480px;
+
   padding: 40px;
+  color: white;
+
+
 } 
+.test:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.privet{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
 .texts  {
 text-align: center;
 font-size: 10px;
 margin-top: 100px;
 }
 .fal{
-  margin-left: 635px;
+  
   color: royalblue;
+}
+.fal:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
 .sea{
   font-size: 15px;
+}
+.greeting-block{
+  position: relative;
+  
+  height: 500px;
+  
+}
+
+.greeting-block__logo{
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/image/home_page.png');
+  z-index: -2;
+  
+}
+.hello{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+.b_about__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
 }
