@@ -9,12 +9,15 @@ body,
 
 .menu-list{
  
-list-style: none    ;
+list-style: none;
+
+
 
 }
 .menu-list li {
   display: inline-block;
-  margin-left: 15px; 
+  margin-left: 25px;
+  margin-top: 40px;
 }
 .menu-list a{
   text-decoration: none;
@@ -29,6 +32,10 @@ list-style: none    ;
 
 .logo{
   font-weight: 800;
+  margin-top: 10px;
+  font-size: 25px; 
+  margin-top: 32px;
+
 }
 .header{
   display: flex;
@@ -64,29 +71,24 @@ list-style: none    ;
 }
 .text{
   color: gainsboro;
-  text-align: center;
+  margin-left: -60px;
   font-size: 20px;
-  margin-top: 100px;
 
 }
 .test{
-   
    font-size: 18px;
    color: gainsboro;
+   
 }
 .buttons {
   display: flex;
-
   padding: 40px;
   color: white;
-
-
 } 
 .test:hover{
   opacity: 0.5;
   cursor: pointer;
 }
-
 .privet{
   margin-left: auto;
   margin-right: auto;
@@ -103,7 +105,8 @@ margin-top: 100px;
 }
 .fal{
   
-  color: royalblue;
+  color: white;
+  font-size: 30px;
 }
 .fal:hover{
   opacity: 0.8;
@@ -124,10 +127,11 @@ margin-top: 100px;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
-  background-image: url('/image/home_page.png');
+  bottom: 0;
+  background-image: url('/image/nice.png');
   z-index: -2;
+  height: 780px;
   
 }
 .hello{
@@ -138,7 +142,7 @@ margin-top: 100px;
   left: 0;
   background-color: black;
   opacity: 0.7;
-  z-index: -1;
+  z-index: -3;
 }
 .b_about__text{
   display: flex;
@@ -148,5 +152,306 @@ margin-top: 100px;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 380px;
+}
+
+.word{
+    margin-top: 20px;
+    white-space: nowrap;
+    text-indent: -30px;
+}
+.iconki{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.conors{
+  background-color: #e4fdf9;
+  height: 1250px;
+}
+.zagolovok{
+  text-align: center;
+}
+.cirkle{
+  text-align: center;
+  margin-top: 20px;
+}
+.kartinka{
   margin-top: 70px;
+}
+.kar{
+  margin-left: 420px;
+  margin-top: -470px;
+}
+.kart{
+  margin-left: 822px;
+  margin-top: -442px;
+}
+.karti{
+  margin-left: 18px;
+  margin-top: 25px;
+}
+.kartin{
+  margin-left: 420px;
+  margin-top: -440px;
+}
+.kartink{
+  margin-left: 822px;
+  margin-top: -441px;
+}
+.topic{
+  margin-top: 230px;
+  text-align: center;
+}
+.article{
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.knopka{
+  margin-left: 390px;
+}
+.knop{
+  margin-top: -46px;
+  margin-left: 540px;
+  white-space: nowrap;
+  padding-right: 10px;
+  color: black;
+}
+.knp{
+  margin-top: -46px;
+  margin-left: 690px;
+  white-space: nowrap;
+}
+.kn{
+  margin-top: -46px;
+  margin-left: 880px;
+  margin-bottom: 100px;
+}
+img{
+  margin-left: 110px;
+}
+.leader{
+  margin-top: -225px;
+  margin-left: 240px;
+  color: white;
+}
+.pam{
+  color: white;
+  margin-left: 250px;
+}
+.image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -190px;
+  margin-right: 80px;
+}
+.picture{
+  margin-left: 805px;
+  margin-top: -370px;
+}
+.pic{
+  margin-top: 30px;
+}
+.userpic{
+  margin-left: 403px;
+  margin-top: -374px;
+}
+.avatar{
+  margin-left: 805px;
+  margin-top: -373px; 
+}
+.snap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 230px;
+}
+.ron{
+  background-color: #f0f1f1;
+  height: 950px;
+}
+.rubric{
+  text-align: center;
+  margin-top: 100px;
+}
+.pan{
+  text-align: center;
+  margin-top: 20px;
+}
+.con{
+  margin-top: 100px;
+}
+.com{
+ margin-left: 370px;
+ margin-top: -690px;
+  
+}
+.cob{
+  margin-left: 785px;
+  margin-top: -695px;
+  margin-bottom: 230px;
+}
+.ban{
+  text-align: center;
+}
+.item{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+.two{
+  margin-left: 405px;
+  margin-top: -488px; 
+}
+.three{
+   margin-left: 809px;
+   margin-top: -487px;
+}
+.faw{
+  font-size: 50px;
+  margin-top: 100px;
+  text-align: center;
+  color:#00897b;
+  margin-bottom: 200px;
+}
+.comment{
+  background-color: #e4fdf9;
+  height: 1650px;
+}
+.titl{
+  text-align: center;
+}
+.paq{
+  text-align: center;
+  margin-top: 20px;
+}
+.imgs{
+  margin-top: 120px;
+}
+.headl{
+  margin-top: -350px;
+  margin-left: 700px;
+  color: #00897b;
+}
+.mouse{
+  margin-left: 715px;
+  margin-top: -10px;
+}
+.happy{
+  margin-left: 590px;
+}
+.birthday{
+  margin-left: 730px;
+  margin-top: -23px;
+}
+.file{
+  margin-left: 740px;
+  margin-top: -17px;
+}
+.develop{
+  margin-left: 877px;
+  margin-top: -25px;
+}
+.pae{
+  margin-left: 700px;
+  margin-top: 20px;
+}
+.bg{
+  margin-top: 205px;
+  margin-left: 600px;
+}
+.bal{
+  margin-top: -350px;
+  margin-left: 110px;
+}
+.bk{
+  margin-top: 20px;
+  
+}
+.hd{
+  margin-left: 145px;
+  margin-top: -22px;
+}
+.fl{
+  margin-left: 150px;
+  margin-top: -18px;
+}
+.xl{
+  margin-left: 290px;
+  margin-top: -25px;
+}
+.para{
+  margin-left: 110px;
+  margin-top: 25px;
+}
+.images{
+  margin-left: -115px;
+  margin-top: 200px;
+}
+.hate{
+  margin-left: 600px;
+  margin-top: -350px;
+
+}
+.vol{
+  margin-left: 490px;
+  margin-top: 20px;
+}
+.money{
+  margin-left: 630px;
+  margin-top: -23px;
+}
+.mon{
+  margin-left: 630px;
+  margin-top: -17px;
+}
+.headn{
+  margin-left: 770px;
+  margin-top: -27px;
+}
+.pant{
+  margin-left: 600px;
+  margin-top: 25px;
+}
+.new{
+  margin-top: 300px;
+  white-space: nowrap;
+  margin-left: 500px;
+  margin-bottom: 95px;
+}
+.contact{
+  margin-left: -145px;
+  
+}
+.connected{
+  margin-top: -1140px;
+  text-align: center;
+  color: white;
+}
+.parag{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.adress{
+   margin-left: 100px;
+   margin-top: 110px;
+}
+.email{
+  margin-left: 70px;
+  margin-top: 80px;
+}
+.send{
+  margin-left: 880px;
+  margin-top: 35px;
+}
+.reserved{
+  text-align: center;
+  color:black;
+  margin-top: 120px;
 }
