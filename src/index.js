@@ -7,22 +7,17 @@ import { faSearch, faFileExcel, } from '@fortawesome/free-solid-svg-icons'
 
 import { faAngleDown, faEllipsisH} from '@fortawesome/free-solid-svg-icons'
 
-<div style={{display}}>
-<AboutItem icon="world" header="Awesome icons" text="sasas"/>
-<AboutItem icon="reload" header="Awesome icons" text="sasas"/>
-<AboutItem icon="head" header="Awesome icons" text="sasas"/>
-</div>
-
 
 class Button extends React.Component{
 
     render(){
 
-
+        
         return(
             
-                    <div className='test' style={{  borderWidth: 2, backgroundColor:this.props.backgroundColor,
-                         borderColor: this.props.borderColor, borderStyle: "solid", width: 100, height: 30, marginRight: 10,  paddingLeft: 15, paddingRight: 10, paddingTop: 12 }}>
+                    <div className='test' style={{ ...this.props,  borderWidth: 2, backgroundColor:this.props.backgroundColor,
+                         borderColor: this.props.borderColor, 
+                         borderStyle: "solid", width: this.props.width ? this.props.width : 100, height: 30, marginRight: 10,  paddingLeft: 15, paddingRight: 10, paddingTop: 12 }}>
                             {this.props.children}
                          </div>
 
@@ -161,76 +156,94 @@ class Header extends React.Component{
                     
         
         <div className='container'>
-            <div className='topic'>
-                <h1>Latest Works</h1>
+            <div className="latest_works">
+                <div className='latest_works__text'>
+                    <div className='topic'>
+                        <h1>Latest Works</h1>
+                    </div>
+                    <div className='article'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                </div>
+                <div className='latest_works__buttons'>
+                    <div className='knopka'>
+                        <Button color={'#282828'} backgroundColor="#00897b" borderColor="transparent">ALL</Button> 
+                    </div>
+                    <div  className='knopka'>
+                        <Button color={'#282828'} width={190} backgroundColor="transparent" borderColor="#00897b">WEB DESIGN</Button>
+                    </div>
+                    <div className='knopka'>
+                        <Button color={'#282828'} width={190} backgroundColor="transparent" borderColor="#00897b">UI/UX WEB DESIGN</Button>
+                    </div>
+                    <div className='knopka'>
+                        <Button color={'#282828'} backgroundColor="transparent" borderColor="#00897b">MOCKUPS</Button>
+                    </div>
+                </div>
             </div>
-            <div className='article'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </div>
-            <div className='knopka'>
-               <Button backgroundColor="#00897b" borderColor="transparent">ALL</Button> 
-            </div>
-            <div className='knop'>
-               <Button backgroundColor="transparent" borderColor="#00897b">WEB DESIGN</Button>
-            </div>
-            <div className='knp'>
-              <Button backgroundColor="transparent" borderColor="#00897b">UI/UX WEB DESIGN</Button>
-            </div>
-            <div className='kn'>
-               <Button backgroundColor="transparent" borderColor="#00897b">MOCKUPS</Button>
-            </div>
         </div>
-           <div className='container'>
-        <div className='img'>
-            <img src='./image/Rectangle.png'/>
-        </div>
-        <div className='leader'>
-            <h3>Hand Watch</h3>
-        </div>
-        <div className='pam'>
-            <p>ui/ux design</p>
-        </div>
-        <div className='image'>
-            <img src='./image/intro.png'/>
-        </div>
-        <div className='picture'>
-            <img src='./image/layer.png'/>
-        </div>
-        <div className='pic'>
-            <img src='./image/rect.png'/>
-        </div>
-                <div className='userpic'>
+        <div className='container'>
+            <div className='karusel'>
+                <div className='karusel__image'>
+                    
+                    <img src='./image/Rectangle.png'/>
+                </div>
+                
+                <div className='karusel__image'>
+                    <img src='./image/intro.png'/>
+                </div>
+                <div className='karusel__image'>
+                    <img src='./image/layer.png'/>
+                </div>
+                <div className='karusel__image'>
+                    <img src='./image/rect.png'/>
+                </div>
+                <div className='karusel__image'>
                     <img src='./image/abstract.png'/>
                 </div>
-                <div className='avatar'>
+                <div className='karusel__image'>
                     <img src='./image/layout.png'/>   
                 </div>
             </div>
-              
-              <div className='snap'>
-                  <Button backgroundColor="#00897b" borderColor="transparent">VIEW ALL</Button> 
-              </div>
-                   <div className='ron'>
-                       <div className='rubric'>
-                           <h1>Pricing Plan</h1>
-                       </div>
-                       <div className='pan'>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                       </div>
-                       <div className='con'></div>
-                       <img src ='./image/free.png'/>
-                        
-                            <div className='com'>
-                                <img src ='./image/baisc.png'/>
-                            </div> 
-                            <div className='cob'>
-                                 <img src ='./image/ultimates.png'/>
-                            
+        </div>
+        <div className='container'>
+            <div className='prices'>
+                <div className='snap'>
+                    
+                    <Button backgroundColor="#00897b" borderColor="transparent">VIEW ALL</Button> 
+                </div>
+                <div className='ron'>
+                    <div className='rubric'>
+                        <h1>Pricing Plan</h1>
+                    </div>
+                    <div className='pan'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                    {/* <div className='con'></div>
+                    <img src ='./image/free.png'/>
+                
+                    <div className='com'>
+                        <img src ='./image/baisc.png'/>
+                    </div> 
+                    <div className='cob'>
+                            <img src ='./image/ultimates.png'/>
+                    
+                    </div> */}
+                    <div className='prices_card prices_card-selected'>
+                        <div className='prices_card__header'>
+                            <h3>Free Trail</h3>
+                            <div style={{display: "flex", flexDirection: "row"}}><sup>$</sup><h1 className='prices_card__header__price'>00</h1>per month</div>
                         </div>
-                        <div>
-                        </div> 
+                        <div className='prices_card__body'>
+                            <div className='prices_card__body___form'></div>
+                            <div className='button'></div>
+                        </div>
+                        
 
-                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
                         
                             

@@ -3,7 +3,8 @@ html,
 body,
 *{
   margin: 0;
-  padding: 0
+  padding: 0;
+  --content-width: 800px;
 }
 
 
@@ -41,7 +42,7 @@ list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 800px;
+  width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
   height: 100px;
@@ -211,24 +212,62 @@ margin-top: 100px;
   margin-bottom: 100px;
 }
 .knopka{
-  margin-left: 390px;
+
 }
-.knop{
-  margin-top: -46px;
-  margin-left: 540px;
-  white-space: nowrap;
-  padding-right: 10px;
-  color: black;
-}
-.knp{
-  margin-top: -46px;
-  margin-left: 690px;
-  white-space: nowrap;
-}
-.kn{
-  margin-top: -46px;
-  margin-left: 880px;
+.latest_works__buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 100px;
+}
+.latest_works{
+  width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.karusel{
+  width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.karusel__image{
+  height: 250px;
+  width: 250px;
+  display: flex;
+  margin-right: 50px;
+  margin-bottom: 100px;
+
+}
+.prices{
+  width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.prices_card{
+  height: 600px;
+  width: 200px;
+  background-color: white;
+
+}
+
+.prices_card-selected{
+
+  box-shadow: 0 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+.prices_card__header{
+  height: 200px;
+  width: 200px;
+  background-color: #3848a9;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100% ) ;
+}
+.prices_card__body{
+  width: 200px;
+  height: 400px;
+  background-color: white;
 }
 img{
   margin-left: 110px;
