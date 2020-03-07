@@ -7,6 +7,11 @@ import { faSearch, faFileExcel} from '@fortawesome/free-solid-svg-icons'
 
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
 
+<div style={{display}}>
+<AboutItem icon="world" header="Awesome icons" text="sasas"/>
+<AboutItem icon="reload" header="Awesome icons" text="sasas"/>
+<AboutItem icon="head" header="Awesome icons" text="sasas"/>
+</div>
 
 
 class Button extends React.Component{
